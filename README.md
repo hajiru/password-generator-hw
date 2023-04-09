@@ -6,7 +6,7 @@ This password generator application generates a random password according to the
 
 ## Usage
 
-Please visit the site at this link 
+Please visit the site at this link https://hajiru.github.io/password-generator-hw/
 
 ![alt text](./Assets/images/03-javascript-homework-demo.png)
 
