@@ -115,4 +115,31 @@ function generatePass() {
         );
     }
 
+    // Loop for character types
+    // Prompt --> Do they want lowercase letters?
+    // Prompt --> Do they want uppercase letters?
+    // Prompt --> Do they want numbers?
+    // Prompt --> Do they want special characters?
+    else {
+        if (confirm("Would you like lower case letters in your password?")) {
+            Array.prototype.push.apply(selectedArray, lowercaseLetters);
+        }
+
+        if (confirm("Would you like upper case letters in your password?")) {
+            Array.prototype.push.apply(selectedArray, uppercaseLetters);
+        }
+        
+        if (confirm("Would you like numbers in your password?")) {
+             Array.prototype.push.apply(selectedArray, numChar);
+        }
+
+        if (confirm("Would you like special characters in your password?")) {
+            Array.prototype.push.apply(selectedArray, specialChar);
+        }
+        
+        if (selectedArray.length === 0) {
+            alert("You must choose atleast one character for your password.");
+        }
+    }
+
 }
