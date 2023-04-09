@@ -112,7 +112,7 @@ function generatePass() {
     if (passLength < 8 || passLength > 128) {
 
         alert (
-            "Please choose a specified number from 8 to 128.Please start over."
+            "Please choose a specified number from 8 to 128. Please start over."
         );
         return;
     }
