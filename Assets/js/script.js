@@ -155,7 +155,7 @@ function generatePass() {
 
 }
 
-// Calls generatePass function
+// Calls generatePass function on button click
 var buttonEl = document.querySelector("button#generate");
 buttonEl.addEventListener("click", () => {
     generatePass();
