@@ -102,4 +102,17 @@ function generatePass() {
     var selectedArray = [];
     var createdPass = "";
 
+    // Prompt for password length --> stored in a variable
+    var passLength = prompt(
+        "How many characters would you like in your password?"
+    );
+
+    // Validate user input --> if user chooses < 8 or > 128, alert that they need to choose a valid password length
+    if (passLength < 8 || passLength > 128) {
+
+        alert(
+            "Please choose a specified number from 8 to 128. Please try again."
+        );
+    }
+
 }
