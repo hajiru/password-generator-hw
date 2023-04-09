@@ -142,4 +142,10 @@ function generatePass() {
         }
     }
 
+    // Run loop to validated information and create the password
+    for (var i = 0; i < passLength; i++) {
+        var random = Math.floor(Math.random() * selectedArray.length);
+        createdPass += selectedArray[random];
+    }
+
 }
