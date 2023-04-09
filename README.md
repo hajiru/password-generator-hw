@@ -6,7 +6,7 @@ This password generator application generates a random password according to the
 
 ## Usage
 
-![alt text](./assets/images/03-javascript-homework-demo.png)
+![alt text](./Assets/images/03-javascript-homework-demo.png)
 
 ## License
 
