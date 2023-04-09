@@ -1,5 +1,3 @@
-// Assignment Code
-
 // Main Function
 function generatePass() {
     
