@@ -4,11 +4,12 @@
 function generatePass() {
     
     // Need the following variables:
-    // array of lowercase letters
-    // array of uppercase letters
-    // array of numbers
-    // array of special characters
-    // to hold the password we're building
+    // Array of lowercase letters
+    // Array of uppercase letters
+    // Array of numbers
+    // Array of special characters
+    // Empty array to hold selected characters
+    // Variable to hold the created password
     var lowercaseLetters = [
         "a",
         "b",
@@ -103,16 +104,17 @@ function generatePass() {
     var createdPass = "";
 
     // Prompt for password length --> stored in a variable
-    var passLength = prompt(
+    var passLength = prompt (
         "How many characters would you like in your password?"
     );
 
     // Validate user input --> if user chooses < 8 or > 128, alert that they need to choose a valid password length
     if (passLength < 8 || passLength > 128) {
 
-        alert(
-            "Please choose a specified number from 8 to 128. Please try again."
+        alert (
+            "Please choose a specified number from 8 to 128.Please start over."
         );
+        return;
     }
 
     // Loop for character types
@@ -148,4 +150,13 @@ function generatePass() {
         createdPass += selectedArray[random];
     }
 
+    // Retrieves created password and displays it
+    document.getElementById("password").innerHTML = createdPass;
+
 }
+
+// Calls generatePass function
+var buttonEl = document.querySelector("button#generate");
+buttonEl.addEventListener("click", () => {
+    generatePass();
+});
